@@ -1,5 +1,4 @@
 package com.login.dao;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -20,7 +19,7 @@ public class LoginDao {
 				Connection con = DriverManager.getConnection(url,user,password);
 				PreparedStatement st = con.prepareStatement(sql);
 				st.setString(1, uname);
-				st.setString(2, password);
+				st.setString(2, pass);
 				ResultSet rs = st.executeQuery();		
 				if(rs.next()) {
 					return true;
