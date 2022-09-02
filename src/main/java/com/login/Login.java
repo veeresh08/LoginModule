@@ -19,7 +19,7 @@ public class Login extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String uname = request.getParameter("uname");
+		String uname = request.getParameter("name");
 		String password = request.getParameter("password");
 		
 		LoginDao dao = new LoginDao();
