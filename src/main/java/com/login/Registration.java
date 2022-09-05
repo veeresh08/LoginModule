@@ -24,7 +24,7 @@ public class Registration extends HttpServlet {
 		 String uemail = request.getParameter("email");
 		 String pass = request.getParameter("password");
 		 String umobile = request.getParameter("contact");
-		 System.out.println("encountered me 1");
+		 //System.out.println("encountered me 1");
 		 
 //		 PrintWriter out = response.getWriter();
 //		 out.print(uname);
@@ -40,7 +40,7 @@ public class Registration extends HttpServlet {
 			RequestDispatcher dispatcher = null;
 				
 				try {
-					System.out.println("encountered me");
+//					System.out.println("encountered me");
 					Class.forName("com.mysql.jdbc.Driver");
 					Connection con = DriverManager.getConnection(url,user,password);
 					PreparedStatement st = con.prepareStatement(sql);
@@ -55,7 +55,7 @@ public class Registration extends HttpServlet {
 					dispatcher = request.getRequestDispatcher("registration.jsp");
 					if(rowcount>0) {
 						request.setAttribute("status", "success");
-						System.out.println("encountered me success");
+//						System.out.println("encountered me success");
 						
 					}else {
 						request.setAttribute("status", "failed");

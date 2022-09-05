@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Adding numberes</title>
 </head>
 <body>
 
@@ -16,10 +16,12 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 		response.sendRedirect("login.jsp");
 	}
 
+	
+	
 %>
 
 Welcome ${username}
-<a href="videos.jsp">for Videos click here</a>
+<a href="videos.jsp">for Exception handling</a>
 
 <form action="Logout">
 	
@@ -27,7 +29,6 @@ Welcome ${username}
 	
 </form>
 
-<br>
-hi
+
 </body>
 </html>
