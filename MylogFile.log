@@ -1,0 +1,30 @@
+Sep 05, 2022 8:48:20 PM com.logging.Mylogger <clinit>
+INFO: Logger Initialized
+Sep 05, 2022 8:48:20 PM com.logging.Mylogger writeToLog
+INFO: Exception
+Sep 05, 2022 8:48:28 PM com.logging.Mylogger writeToLog
+INFO: Exception devide / 0 exception
+Sep 05, 2022 9:07:36 PM com.logging.Mylogger writeToLog
+INFO: Exception in error 404 invalid URL
+Sep 05, 2022 9:08:02 PM com.logging.Mylogger writeToLog
+INFO: Exception devide / 0 exception
+Sep 05, 2022 9:08:06 PM com.logging.Mylogger writeToLog
+INFO: Exception in error 404 invalid URL
+Sep 05, 2022 9:08:19 PM com.logging.Mylogger writeToLog
+INFO: Exception
+Sep 05, 2022 9:15:15 PM com.logging.Mylogger <clinit>
+INFO: Logger Initialized
+Sep 05, 2022 9:15:15 PM com.logging.Mylogger writeToLog
+INFO: Exception devide / 0 exception
+Sep 05, 2022 9:23:18 PM com.logging.Mylogger <clinit>
+INFO: Logger Initialized
+Sep 05, 2022 9:23:18 PM com.logging.Mylogger writeToLog
+INFO: Exception
+Sep 05, 2022 9:23:27 PM com.logging.Mylogger writeToLog
+INFO: Exception devide / 0 exception
+Sep 06, 2022 10:45:43 AM com.logging.Mylogger writeToLog
+INFO: Exception
+Sep 06, 2022 10:45:51 AM com.logging.Mylogger writeToLog
+INFO: Exception devide / 0 exception
+Sep 06, 2022 10:45:55 AM com.logging.Mylogger writeToLog
+INFO: Exception in error 404 invalid URL

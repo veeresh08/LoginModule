@@ -1,6 +1,7 @@
 package com.login;
 
 import java.io.IOException;
+
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.logging.Mylogger;
 import com.login.dao.LoginDao;
 
 
@@ -18,7 +20,7 @@ import com.login.dao.LoginDao;
 public class Login extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		 Mylogger.writeToLog("Exception");
 		String uname = request.getParameter("name");
 		String password = request.getParameter("password");
 		
@@ -26,7 +28,7 @@ public class Login extends HttpServlet {
 			
 			try {
 				if(dao.check(uname, password)) {
-					
+				
 					HttpSession session = request.getSession();
 					session.setAttribute("username",uname);
 					response.sendRedirect("welcome.jsp");
